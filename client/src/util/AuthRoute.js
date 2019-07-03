@@ -9,7 +9,7 @@ function AuthRoute({ component: Component, ...rest }) {
   return (
     <Route
       {...rest}
-      {(props) => user ? <Rediret to='/' /> : <Component {...props} />}
+      {props => user ? <Rediret to='/' /> : <Component {...props} />}
     />
   );
 }
